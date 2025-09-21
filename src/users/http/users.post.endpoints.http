@@ -1,0 +1,32 @@
+
+POST http://localhost:3005/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjksImVtYWlsIjoibWFya2NoaW5hQGV4YW1wbGUuY29tIiwiaWF0IjoxNzU2MDA1Mzg3LCJleHAiOjE3NTYwMDg5ODcsImF1ZCI6ImxvY2FsaG9zdDozMDAwIiwiaXNzIjoibG9jYWxob3N0OjMwMDAifQ.9mlOa4JrlWB5QPfbYS6Kbl7rJIyeZLSHO7wGpjVjoGs
+
+{
+  "firstName": "Mark",
+  "lastName": "Kas",
+  "email": "markas@example.com",
+  "password": "Password#123"
+}
+
+POST http://localhost:3005/users/create-many
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjksImVtYWlsIjoibWFya2NoaW5hQGV4YW1wbGUuY29tIiwiaWF0IjoxNzU1NzUwNTUxLCJleHAiOjE3NTU3NTQxNTEsImF1ZCI6ImxvY2FsaG9zdDozMDAwIiwiaXNzIjoibG9jYWxob3N0OjMwMDAifQ.pwdih7ysh3sE7So3pYo8YFpKjIuC7EuYr2GQyvYq_3c
+
+{
+  "users": [
+    {
+      "firstName": "Sam",
+      "lastName": "China",
+      "email": "sam@example.com",
+      "password": "Password#123"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "China",
+      "email": "jane@example.com",
+      "password": "Password#123"
+    }
+  ]
+}
