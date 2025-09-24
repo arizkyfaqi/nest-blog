@@ -5,10 +5,11 @@ import {
   UseInterceptors,
 } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { ApiHeaders, ApiOperation } from '@nestjs/swagger';
+import { ApiHeaders, ApiOperation, ApiTags } from '@nestjs/swagger';
 import { Express } from 'express';
 import { UploadsService } from './providers/uploads.service';
 
+@ApiTags('Upload File')
 @Controller('uploads')
 export class UploadsController {
   constructor(

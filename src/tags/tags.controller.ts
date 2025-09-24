@@ -8,7 +8,9 @@ import {
 } from '@nestjs/common';
 import { CreateTagDto } from './dto/create-tag.dto';
 import { TagsService } from './providers/tags.service';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Tags')
 @Controller('tags')
 export class TagsController {
   constructor(

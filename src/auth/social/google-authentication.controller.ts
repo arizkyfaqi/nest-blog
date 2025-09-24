@@ -3,8 +3,10 @@ import { GoogleAuthenticationService } from './providers/google-authentication.s
 import { GoogleTokenDto } from './dto/google.token.dto';
 import { Auth } from '../decorators/auth.decorator';
 import { AuthType } from '../enums/auth-type.enum';
+import { ApiTags } from '@nestjs/swagger';
 
 @Auth(AuthType.None)
+@ApiTags('Google Auth')
 @Controller('auth/google-authentication')
 export class GoogleAuthenticationController {
   constructor(
